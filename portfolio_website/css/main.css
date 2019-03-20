@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,400i,700");
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  color: rgb(245, 4, 225);
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+
+/* h2,
+h3, */
+a {
+  color: rgb(245, 4, 225);
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: 0.95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+.banner {
+  background: url("../img/using_laptop.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.banner .banner-text {
+  font-family: "Sacramento", cursive;
+  font-size: 4vw;
+  color: rgb(4, 245, 193);
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+/* ---- Page Elements ---- */
+
+/* .logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+} */
+.feat-img {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col {
+    flex: 1;
+    /* makes both columns grow equally */
+    flex-basis: 50%;
+    /* makes both columns take up 50% of the viewport */
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .secondary {
+    order: -1;
+    /* places the content column first in the row */
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    /* puts the flex items at opposite ends of the nav bar */
+  }
+
+  .col {
+    flex-basis: 0;
+    /* displays columns on the same line */
+  }
+
+  .primary {
+    flex: 2;
+    /* makes the primary column twice as big */
+  }
+}
