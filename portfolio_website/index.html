@@ -13,9 +13,10 @@
     <header class="main-header">
       <h1 class="name"><a href="#">Alyssa FitzGerald</a></h1>
       <nav>
+        <a id="hamburger">&#9776;</a>
         <ul class="main-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Education</a></li>
           <li><a href="#">Work History</a></li>
@@ -24,82 +25,126 @@
       </nav>
     </header>
 
-    <section class="banner">
+    <section id="home" class="banner" >
       <div class="banner-text">
         <h1>Alyssa FitzGerald</h1>
         <h2>Web Developer</h2>
       </div>
     </section>
 
-    <div class="row">
-      <div class="primary col">
-        <h2>About</h2>
-        <img class="feat-img" src="img/backlit.jpg" alt="Silhouette photo" />
-        <p>
-          Cat ipsum dolor sit amet, while happily ignoring when being called and
-          grab pompom in mouth and put in water dish. Please stop looking at
-          your phone and pet me hey! you there, with the hands where is my
-          slave? I'm getting hungry yet find empty spot in cupboard and sleep
-          all day and sit by the fire. Stand in doorway, unwilling to chose
-          whether to stay in or go out i show my fluffy belly but it's a trap!
-        </p>
-      </div>
-      <!--/.primary-->
-      <div class="secondary col">
-        <h2>Education</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
-          fuga.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae minus
-          odit blanditiis aperiam unde. Tempora quibusdam delectus aliquam
-          reiciendis numquam? Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Quo, laborum.
-        </p>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aut
-          hic est excepturi eius error voluptas voluptatum animi quae nisi iusto
-          pariatur, deserunt quod esse!
-        </p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
-          eligendi rerum accusamus aut, ut praesentium amet enim id doloribus
-          quisquam!
-        </p>
-      </div>
-      <!--/.secondary-->
+    <main class="container">
+    <!-- <section class="info"> -->
+      <div class="row">
+        <div class="primary col" id="about">
+          <h2>About</h2>
 
-      <div class="tertiary col">
-        <h2>Work History</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-          reiciendis natus recusandae beatae quisquam odit iste fugiat ratione
-          at dignissimos.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, libero
-          quam ducimus natus expedita magni harum blanditiis officiis veniam
-          fugiat.
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod tenetur
-          quisquam similique velit quos, eligendi aspernatur ipsa culpa sint
-          exercitationem?
-        </p>
-      </div>
-      <!--/.tertiary-->
-    </div>
+          <p>
+            Cat ipsum dolor sit amet, while happily ignoring when being called
+            and grab pompom in mouth and put in water dish. Please stop looking
+            at your phone and pet me hey! you there, with the hands where is my
+            slave? I'm getting hungry yet find empty spot in cupboard and sleep
+            all day and sit by the fire. Stand in doorway, unwilling to chose
+            whether to stay in or go out i show my fluffy belly but it's a trap!
+          </p>
+          <!-- <img class="feat-img" src="img/backlit.jpg" alt="Silhouette photo" /> -->
+        </div>
+        <!--/.primary-->
+        <div class="secondary col">
+          <h2>Education</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
+            fuga.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            minus odit blanditiis aperiam unde. Tempora quibusdam delectus
+            aliquam reiciendis numquam? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Quo, laborum.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio aut
+            hic est excepturi eius error voluptas voluptatum animi quae nisi
+            iusto pariatur, deserunt quod esse!
+          </p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+            eligendi rerum accusamus aut, ut praesentium amet enim id doloribus
+            quisquam!
+          </p>
+        </div>
 
-    <section id="Projects">
-      <h3>Projects</h3>
-      <div id="Project 1"></div>
-      <div id="Project 2"></div>
+        <!--/.secondary-->
+
+        <div class="tertiary col">
+          <h2>Work History</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+            reiciendis natus recusandae beatae quisquam odit iste fugiat ratione
+            at dignissimos.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+            libero quam ducimus natus expedita magni harum blanditiis officiis
+            veniam fugiat.
+          </p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+            tenetur quisquam similique velit quos, eligendi aspernatur ipsa
+            culpa sint exercitationem?
+          </p>
+        </div>
+        <!--/.tertiary-->
+      </div>
     </section>
-    <section id="About"></section>
-    <h3>About</h3>
-    <section id="Contact"></section>
-    <h3>"Contact"</h3>
-    <footer></footer>
+
+    <section class="projects">
+        <h2>Projects</h2>
+          <div class="project-list"></div>
+          <h3>Ruby Terminal App</h2>
+            <div class="first-project">
+                
+              <div class="project-img">
+                    <img src="img/ruby_screenshot.png" alt="Screenshot of ruby app" />
+              </div>
+              <div class="project-text">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium reprehenderit omnis veniam explicabo unde cupiditate voluptatibus iusto enim maxime. Velit illo officia neque fugit doloremque reiciendis, ad possimus ullam eum.</p>
+                </div>
+              
+            </div>
+
+            <h3>CSS Zen Garden</h2>
+            <div class="second-project">
+                
+                  
+                <div class="project-img">
+                    <img src="img/css_screenshot.png" alt="Screenshot of CSS Zen Garden design" />
+                </div>
+                <div class="project-text">
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ea dolores dolore eligendi, numquam, ipsam assumenda itaque sed perspiciatis, neque nemo. Eligendi repellat consequatur voluptate rerum unde possimus minus error!</p>
+                  </div>
+              
+              </div>
+    </section>
+</main>
+    <footer class="contact">
+    <h2>Contact</h2>
+    <div>
+      <p>LinkedIn</p>
+      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="lyssfitz"><a class="LI-simple-link" href='https://au.linkedin.com/in/lyssfitz?trk=profile-badge'>Alyssa FitzGerald</a></div>
+      <li>Github</li>
+    </div>
+    </footer>
+    
+    <script>
+      document.querySelector("#hamburger").addEventListener("click", () => {
+        var menu = document.querySelector(".main-nav");
+        if(menu.className === "main-nav") {
+          menu.className += " responsive";
+        } else {
+          menu.className = "main-nav";
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   </body>
 </html>

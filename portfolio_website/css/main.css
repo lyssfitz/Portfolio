@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Sacramento");
-@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Sacramento");
 
 /* ================================= 
   Base Element Styles
@@ -11,7 +10,7 @@
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
-  color: rgb(245, 4, 225);
+  color: black;
   margin: 0;
 }
 
@@ -26,14 +25,18 @@ p {
   margin-bottom: 1.8em;
 }
 
-/* h2,
-h3, */
-a {
-  color: rgb(245, 4, 225);
+h2,
+nav a {
+  color: rgb(4, 245, 193);
+  text-shadow: 1px 1px 2px #0a0a0a;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 h2,
@@ -45,6 +48,9 @@ img {
   max-width: 100%;
 }
 
+.container {
+  padding: 0 20px;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -54,9 +60,23 @@ img {
 .name {
   font-size: 1.35em;
   margin: 0;
+  font-family: "Sacramento", cursive;
+  color: rgb(4, 245, 193);
+  text-shadow: 1px 1px 2px #0a0a0a;
 }
 .main-nav {
   margin-top: 5px;
+  display: none;
+}
+
+.responsive {
+  display: block;
+}
+
+#hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .name a,
 .main-nav a {
@@ -66,27 +86,23 @@ img {
 }
 .main-nav a {
   font-size: 0.95em;
-  color: #3acec2;
+  color: rgb(4, 245, 193);
   text-transform: uppercase;
 }
 .main-nav a:hover {
-  color: #093a58;
+  color: black;
 }
 
 /* ---- Layout Containers ---- */
 .banner {
-  background: url("../img/using_laptop.jpg") 50% no-repeat;
+  background: url("../img/using_laptop.jpg") 30% no-repeat;
   background-size: cover;
   height: 60vh;
   text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  /* -webkit-align-items: center;
+  -ms-flex-align: center; */
   align-items: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -97,6 +113,17 @@ img {
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
+.project-img {
+  margin: 0 10px;
+}
+
+.first-project {
+  margin-bottom: 10px;
+}
+.first-project .project-img {
+  border: solid 1px black;
+}
+
 /* ---- Page Elements ---- */
 
 /* .logo {
@@ -105,19 +132,22 @@ img {
 .headline {
 	margin-bottom: 0;
 } */
-.feat-img {
+/* .feat-img {
   border-radius: 5px;
   padding: 10px;
-}
+} */
 
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .main-header,
   .main-nav,
-  .row {
+  .row,
+  .project-list,
+  .first-project,
+  .second-project {
     display: flex;
   }
 
@@ -126,37 +156,53 @@ img {
     align-items: center;
   }
 
+  #hamburger {
+    display: none;
+  }
+
   .col {
     flex: 1;
-    /* makes both columns grow equally */
+    /* makes columns grow equally */
     flex-basis: 50%;
-    /* makes both columns take up 50% of the viewport */
+    /* makes each columns take up 50% of the viewport */
   }
 
   .row {
     flex-wrap: wrap;
   }
 
-  .secondary {
-    order: -1;
-    /* places the content column first in the row */
+  .first-project,
+  .second-project {
+    align-items: center;
   }
+
+  .second-project .project-text {
+    order: -1;
+  }
+  /* .secondary {
+    order: -1;
+  } */
+  /* places the content column first in the row */
 }
 
+.banner {
+  height: 100vh;
+}
 @media (min-width: 1025px) {
   .main-header {
     flex-direction: row;
     justify-content: space-between;
-    /* puts the flex items at opposite ends of the nav bar */
+    /* puts the nav flex items at opposite ends of the nav bar */
   }
 
   .col {
     flex-basis: 0;
-    /* displays columns on the same line */
   }
 
-  .primary {
+  /* displays columns on the same line */
+
+  /* .primary {
     flex: 2;
-    /* makes the primary column twice as big */
-  }
+  } */
+  /* makes the primary column twice as big */
 }
