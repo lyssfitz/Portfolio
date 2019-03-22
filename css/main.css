@@ -53,6 +53,12 @@ img {
 .container {
   padding: 0 20px;
 }
+
+.line-image-text {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+}
 /* ================================= 
   Base Layout Styles
 ==================================== */
@@ -127,6 +133,13 @@ img {
 
 /* ---- Page Elements ---- */
 
+.table-container {
+  display: none;
+}
+
+.work-history-list {
+  text-align: center;
+}
 /* .logo {
 	width: 190px;
 }
@@ -143,10 +156,15 @@ img {
 ==================================== */
 
 @media (min-width: 768px) {
+  .banner {
+    height: 100vh;
+  }
+
   .main-header,
   .main-nav,
   .row,
   .project-list,
+  .tertiary,
   .first-project,
   .second-project {
     display: flex;
@@ -180,15 +198,47 @@ img {
   .second-project .project-text {
     order: -1;
   }
+
+  .work-history-list {
+    display: flex;
+    justify-content: space-around;
+  }
   /* .secondary {
     order: -1;
   } */
   /* places the content column first in the row */
 }
 
-.banner {
-  height: 100vh;
+/* ---- Table Styles ---- */
+/* .table-container {
+  display: block;
 }
+
+td,
+th {
+  max-width: 100px;
+  /* height: 2rem; */
+/* height: 5rem; */
+/* border: 1px solid rgb(195, 247, 234); */
+/* text-align: center;
+}
+th {
+  background: rgb(250, 253, 252);
+  border-color: white;
+}
+
+.table-heading {
+  color: rgb(4, 245, 193);
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+.table-container {
+  padding: 1rem;
+}
+
+td {
+  padding: 1rem;
+  font-size: 12px;
+} */
 @media (min-width: 1025px) {
   .main-header {
     flex-direction: row;
@@ -196,13 +246,13 @@ img {
     /* puts the nav flex items at opposite ends of the nav bar */
   }
 
-  .col {
+  /* .col {
     flex-basis: 0;
-  }
+  } */
 
   /* displays columns on the same line */
 
-  /* .primary {
+  /* .table-desc {
     flex: 2;
   } */
   /* makes the primary column twice as big */
