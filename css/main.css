@@ -135,6 +135,20 @@ img {
   border: solid 1px black;
 }
 
+.contact {
+  height: 20vh;
+}
+.contact-links a {
+  display: block;
+  color: black;
+  padding: 5px;
+}
+
+.contact-links i {
+  color: rgb(4, 245, 193);
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
 /* ---- Page Elements ---- */
 
 .table-container {
@@ -194,9 +208,18 @@ img {
     flex-wrap: wrap;
   }
 
+  .project-list {
+    padding: 0 100px;
+  }
   .first-project,
   .second-project {
+    padding: 0 100px;
+    justify-content: center;
     align-items: center;
+  }
+
+  .project-text {
+    padding: 0 50px;
   }
 
   .second-project .project-text {
@@ -204,6 +227,11 @@ img {
   }
 
   .work-history-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contact-links {
     display: flex;
     justify-content: space-around;
   }
