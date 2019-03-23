@@ -4,6 +4,16 @@
   Base Element Styles
 ==================================== */
 
+:root {
+  --primary-light-color: #f2fefc;
+  --primary-normal-color: #00f6bf;
+  --primary-dark-color: #00775c;
+  --secondary-color: #555151;
+  --text-dark-color: #555151;
+  --text-light-color: #ffffff;
+  --text-shadow-color: #0a0a0a;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +21,7 @@
 body {
   font-family: "Raleway", sans-serif;
   line-height: 1.6;
-  color: black;
+  color: var(--text-dark-color);
   margin: 0;
 }
 
@@ -27,10 +37,11 @@ p {
 }
 
 h2,
+h3,
 nav a,
 .name {
-  color: rgb(4, 245, 193);
-  text-shadow: 1px 1px 2px #0a0a0a;
+  color: var(--primary-normal-color);
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 a {
@@ -39,8 +50,8 @@ a {
 
 .name a:visited,
 .name a {
-  color: rgb(4, 245, 193);
-  text-shadow: 1px 1px 2px #0a0a0a;
+  color: var(--primary-normal-color);
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 h2,
@@ -52,27 +63,29 @@ img {
   max-width: 100%;
 }
 
-.container {
-  padding: 0 20px;
-}
-
 .line-image-text {
   display: inline-block;
   vertical-align: top;
   padding: 15px;
 }
+
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
 /* ---- Navigation ---- */
 
+.main-header {
+  background: var(--secondary-color);
+}
+
 .name {
   font-size: 1.35em;
-  margin: 0;
+  margin: 0 0 0 5px;
   font-family: "Sacramento", cursive;
-  color: rgb(4, 245, 193);
+  color: var(--primary-normal-color);
 }
+
 .main-nav {
   margin-top: 5px;
   display: none;
@@ -89,30 +102,33 @@ img {
   padding: 10px;
   cursor: grabbing;
 }
+
 .name a,
 .main-nav a {
   text-align: center;
   display: block;
   padding: 10px 15px;
 }
+
 .main-nav a {
   font-size: 0.95em;
-  color: rgb(4, 245, 193);
+  color: var(--primary-normal-color);
+  background: var(--secondary-color);
   text-transform: uppercase;
 }
+
 .main-nav a:hover {
-  color: black;
+  color: var(--text-light-color);
 }
 
 /* ---- Layout Containers ---- */
+
 .banner {
   background: url("../img/using_laptop.jpg") 30% no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 100vh;
   text-align: center;
   display: flex;
-  /* -webkit-align-items: center;
-  -ms-flex-align: center; */
   align-items: center;
   justify-content: center;
 }
@@ -120,8 +136,16 @@ img {
 .banner .banner-text {
   font-family: "Sacramento", cursive;
   font-size: 4vw;
-  color: rgb(4, 245, 193);
-  text-shadow: 1px 1px 2px #0a0a0a;
+  color: var(--primary-normal-color);
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
+}
+
+.section {
+  padding: 20px;
+}
+
+.odd {
+  background: var(--primary-light-color);
 }
 
 .project-img {
@@ -131,22 +155,24 @@ img {
 .first-project {
   margin-bottom: 10px;
 }
+
 .first-project .project-img {
   border: solid 1px black;
 }
 
 .contact {
-  height: 20vh;
+  background-color: var(--secondary-color);
 }
+
 .contact-links a {
   display: block;
-  color: black;
+  color: var(--primary-normal-color);
   padding: 5px;
 }
 
 .contact-links i {
-  color: rgb(4, 245, 193);
-  text-shadow: 1px 1px 2px #0a0a0a;
+  color: var(--primary-normal-color);
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 /* ---- Page Elements ---- */
@@ -158,16 +184,6 @@ img {
 .work-history-list {
   text-align: center;
 }
-/* .logo {
-	width: 190px;
-}
-.headline {
-	margin-bottom: 0;
-} */
-/* .feat-img {
-  border-radius: 5px;
-  padding: 10px;
-} */
 
 /* ================================= 
   Media Queries
@@ -198,10 +214,8 @@ img {
   }
 
   .col {
-    flex: 1;
-    /* makes columns grow equally */
-    flex-basis: 50%;
-    /* makes each columns take up 50% of the viewport */
+    flex: 1; /* makes columns grow equally */
+    flex-basis: 50%; /* makes each columns take up 50% of the viewport */
   }
 
   .row {
@@ -211,6 +225,7 @@ img {
   .project-list {
     padding: 0 100px;
   }
+
   .first-project,
   .second-project {
     padding: 0 100px;
@@ -235,57 +250,11 @@ img {
     display: flex;
     justify-content: space-around;
   }
-  /* .secondary {
-    order: -1;
-  } */
-  /* places the content column first in the row */
 }
 
-/* ---- Table Styles ---- */
-/* .table-container {
-  display: block;
-}
-
-td,
-th {
-  max-width: 100px;
-  /* height: 2rem; */
-/* height: 5rem; */
-/* border: 1px solid rgb(195, 247, 234); */
-/* text-align: center;
-}
-th {
-  background: rgb(250, 253, 252);
-  border-color: white;
-}
-
-.table-heading {
-  color: rgb(4, 245, 193);
-  text-shadow: 1px 1px 2px #0a0a0a;
-}
-.table-container {
-  padding: 1rem;
-}
-
-td {
-  padding: 1rem;
-  font-size: 12px;
-} */
 @media (min-width: 1025px) {
   .main-header {
     flex-direction: row;
     justify-content: space-between;
-    /* puts the nav flex items at opposite ends of the nav bar */
   }
-
-  /* .col {
-    flex-basis: 0;
-  } */
-
-  /* displays columns on the same line */
-
-  /* .table-desc {
-    flex: 2;
-  } */
-  /* makes the primary column twice as big */
 }
