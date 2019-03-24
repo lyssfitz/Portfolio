@@ -82,6 +82,8 @@ img {
 
 .main-header {
   background: var(--secondary-color);
+  position: sticky;
+  top: 0;
 }
 
 .name {
@@ -223,6 +225,7 @@ img {
   );
   text-decoration: none;
 }
+
 /* ================================= 
   Media Queries
 ==================================== */
