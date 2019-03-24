@@ -188,6 +188,7 @@ img {
 
 .button-link {
   display: block;
+  text-align: center;
   background: var(--primary-normal-color);
   background-image: linear-gradient(
     to bottom,
@@ -200,8 +201,8 @@ img {
   font-size: 20px;
   font-weight: 400;
   padding: 10px;
-  box-shadow: 1px 1px 20px 0px var(--text-shadow-color);
-  text-shadow: 1px 1px 20px var(--text-shadow-color);
+  box-shadow: 1px 1px 2px var(--text-shadow-color);
+  text-shadow: 1px 1px 2px var(--text-shadow-color);
   border: solid var(--primary-dark-color) 1px;
   text-decoration: none;
   display: inline-block;
