@@ -46,6 +46,7 @@ nav a,
 
 a {
   text-decoration: none;
+  color: var(--primary-normal-color);
 }
 
 .name a:visited,
@@ -185,6 +186,37 @@ img {
   text-align: center;
 }
 
+.button-link {
+  display: block;
+  background: var(--primary-normal-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-normal-color),
+    var(--primary-dark-color)
+  );
+  border-radius: 15px;
+  color: var(--text-light-color);
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  box-shadow: 1px 1px 20px 0px var(--text-shadow-color);
+  text-shadow: 1px 1px 20px var(--text-shadow-color);
+  border: solid var(--primary-dark-color) 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background: var(--normal-color);
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary-dark-color),
+    var(--primary-normal-color)
+  );
+     text-decoration: none;
+}
 /* ================================= 
   Media Queries
 ==================================== */
