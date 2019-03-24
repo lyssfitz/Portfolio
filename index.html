@@ -61,10 +61,7 @@
         <div>
           <h2 class="section-heading">Work History</h2>
           <p>
-            Before learning web development, I had worked in Employee Relations
-            - a specialist field in HR where I used the employment law knowledge
-            I gained during my university studies. I worked in employee
-            relations roles for the following companies:
+             Before learning web development, I worked in HR specialising in Employee Relations and using  my employment law knowledge to provide strategic advice and support to staff and business stakeholders nationally for a range of people issues. I worked for the following companies:
           </p>
           <ul class="work-history-list">
             <li>
@@ -85,18 +82,15 @@
           </ul>
         </div>
       </div>
-    </main>
-
-      <div id="projects" class="section">
+      <div class="section odd" id="projects">
         <h2 class="section-heading">Projects</h2>
 
-        <div class="section odd">
           <h3>Ruby Terminal App</h3>
 
           <div class="first-project">
 
-            <div class="project-img">
-              <img src="img/ruby_screenshot.png" alt="Screenshot of ruby app" />
+            <div>
+              <img class="project-img" src="img/ruby_screenshot.png" alt="Screenshot of ruby app" />
             </div>
 
             <div class="project-text">
@@ -105,26 +99,30 @@
                 on this app which helps to match potential cat owners with a
                 suitable rescue cat to adopt.
               </p>
-              <a
-                class="button-link"
-                href="https://github.com/wlei6277/terminal_app"
-                target="_blank"
-                >View project on Github</a>
+              <a class="button-link"
+                 href="https://github.com/wlei6277/terminal_app"
+                 target="_blank"
+              >
+                View on Github
+              </a>
+
             </div>
           </div>
-          </div>
 
-          <div class="section">
+          <br/>
+
           <h3>CSS Zen Garden</h3>
           <div class="second-project">
             <div class="project-img">
-              <a
-                href="https://github.com/lyssfitz/css-zen-garden"
-                target="_blank"
-                ><img
-                  src="img/css_screenshot.png"
-                  alt="Screenshot of CSS Zen Garden design"
-              /></a>
+              <a href="https://github.com/lyssfitz/css-zen-garden"
+                 target="_blank"
+              >
+                <img class="project-img"
+                     src="img/css_screenshot.png"
+                     alt="Screenshot of CSS Zen Garden design"
+                />
+              </a>
+
             </div>
 
             <div class="project-text">
@@ -132,30 +130,41 @@
                 Learning CSS with the CSS Zen Garden challenge where I played
                 around with some basic CSS to change the styling of the page.
               </p>
-
-              <a
-                class="button-link"
-                href="https://github.com/lyssfitz/css-zen-garden"
-                target="_blank"
-                >View project on GitHub</a>
-              <!-- to view this project on Github! -->
-            </div>
+              <a class="button-link"
+                 href="https://github.com/lyssfitz/css-zen-garden"
+                 target="_blank"
+              >
+                View on GitHub
+              </a>
             </div>
           </div>
-        
+
       </div>
-    
-    <footer class="section contact" id="contact">
-      <h2 class="section-heading">Contact</h2>
-      <ul class="work-history-list">
-        <li><a href="https://github.com/lyssfitz" target="_blank"
-          ><i class="far fa-envelope fa-3x"></i><p class="line-image-text"> lyssfitz@outlook.com</p></p></a><li>
-        <li><a href="https://www.linkedin.com/in/lyssfitz/" target="_blank"
-          ><i class="fab fa-linkedin fa-3x"></i><p class="line-image-text">linkedin.com/in/lyssfitz/</p></a></li>
-        <li><a href="https://github.com/lyssfitz" target="_blank"
-          ><i class="fab fa-github fa-3x"></i><p class="line-image-text">github.com/lyssfitz/</p></a></li>
+
+      <div class="section contact" id="contact">
+        <h2 class="section-heading">Contact</h2>
+          <ul class="work-history-list">
+            <li>
+              <a a href="mailto:lyssfitz@outlook.com" target="_blank">
+                <i class="far fa-envelope fa-3x"></i>
+                <p class="line-image-text">lyssfitz@outlook.com</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lyssfitz/" target="_blank">
+                <i class="fab fa-linkedin fa-3x"></i>
+                <p class="line-image-text">linkedin.com/in/lyssfitz/</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lyssfitz" target="_blank">
+                <i class="fab fa-github fa-3x"></i>
+                <p class="line-image-text">github.com/lyssfitz/</p></a>
+            </li>
           </ul>
-    </footer>
+        </div>
+    </main>
+
     <script>
       document.querySelector("#hamburger").addEventListener("click", () => {
         const menu = document.querySelector(".main-nav");
@@ -166,5 +175,6 @@
         }
       });
     </script>
+
   </body>
 </html>

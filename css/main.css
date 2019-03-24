@@ -3,6 +3,9 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --primary-light-color: #f2fefc;
@@ -12,10 +15,6 @@
   --text-dark-color: #555151;
   --text-light-color: #ffffff;
   --text-shadow-color: #0a0a0a;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 * {
@@ -65,7 +64,11 @@ a {
 
 h2,
 h3 {
-  margin-top: 0;
+  margin-top: 5px;
+}
+
+h2 {
+	text-align: center;
 }
 
 img {
@@ -78,7 +81,7 @@ img {
   padding: 15px;
 }
 
-/* ================================= 
+/* =================================
   Base Layout Styles
 ==================================== */
 
@@ -92,13 +95,14 @@ img {
 
 .name {
   font-size: 1.35em;
-  margin: 0 0 0 5px;
+  padding: 10px 10px;
+  margin: 0;
   font-family: "Sacramento", cursive;
   color: var(--primary-normal-color);
 }
 
 .main-nav {
-  margin-top: 5px;
+  margin: 0;
   display: none;
 }
 
@@ -109,7 +113,7 @@ img {
 #hamburger {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
   padding: 10px;
   cursor: grabbing;
 }
@@ -160,19 +164,21 @@ img {
 }
 
 .project-img {
-  margin: 0 10px;
+  margin: 0;
+  display: block;
 }
 
 .first-project {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .first-project .project-img {
-  border: solid 1px black;
+  border: solid 1px var(--secondary-color);
 }
 
 .contact {
   background-color: var(--secondary-color);
+
 }
 
 .contact-links {
@@ -181,7 +187,6 @@ img {
 .contact-links a {
   display: block;
   color: var(--primary-normal-color);
-  /* padding: 5px; */
 }
 
 .contact-links i {
@@ -193,6 +198,8 @@ img {
 
 .work-history-list {
   text-align: center;
+  vertical-align: center;
+  justify-content: center;
 }
 
 .button-link {
@@ -200,12 +207,11 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  background: var(--primary-normal-color);
-  background-image: linear-gradient(
-    to bottom,
-    var(--primary-normal-color),
-    var(--primary-dark-color)
+  width: 200px;
+  background: linear-gradient(
+          to bottom,
+          var(--primary-normal-color),
+          var(--primary-dark-color)
   );
   border-radius: 15px;
   color: var(--text-light-color);
@@ -221,16 +227,14 @@ img {
 }
 
 .button-link:hover {
-  background: var(--normal-color);
-  background-image: linear-gradient(
-    to bottom,
-    var(--primary-dark-color),
-    var(--primary-normal-color)
+  background: linear-gradient(
+          to bottom,
+          var(--primary-dark-color),
+          var(--primary-normal-color)
   );
   text-decoration: none;
 }
-
-/* ================================= 
+/* =================================
   Media Queries
 ==================================== */
 
@@ -241,8 +245,6 @@ img {
 
   .main-header,
   .main-nav,
-  .container,
-  /* .section, */
   .first-project,
   .second-project {
     display: flex;
@@ -260,6 +262,7 @@ img {
   main .section {
     flex: 1; /* makes columns grow equally */
     flex-basis: 50%; /* makes each columns take up 50% of the viewport */
+    padding: 20px 20%;
   }
 
   .container {
@@ -267,18 +270,18 @@ img {
   }
 
   .project-list {
-    padding: 0 100px;
+    padding: 0 50px;
   }
 
   .first-project,
   .second-project {
-    padding: 0 100px;
+    padding: 0 20px;
     justify-content: center;
     align-items: center;
   }
 
   .project-text {
-    padding: 0 50px;
+    padding: 0 30px;
     text-align: center;
   }
 
@@ -292,8 +295,9 @@ img {
   }
 
   .contact-links {
-    display: flex;
-    justify-content: space-around;
+   /* display: flex;
+    justify-content: space-around;*/
+    text-align: left;
   }
 }
 
