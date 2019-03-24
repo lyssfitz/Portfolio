@@ -39,11 +39,19 @@ Sitemap
 
 * The sitemap is a simple one-page layout.
 
-**insert sitemap img link**
+**![](https://github.com/lyssfitz/Portfolio/blob/master/docs/sitemap.JPG)**
 
 Screenshots
 
-**insert image links**
+**![](https://github.com/lyssfitz/Portfolio/blob/master/docs/site-screenshot-1.png**)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/site-screenshot-2.png)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/site-screenshot-3.png)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/site-screenshot-4.png)
+
+
 
 Target audience
 
@@ -61,22 +69,25 @@ Design Process
 
 * After looking at some other web developer portfolio sites for inspiration, I created a moodboard on pinterest with my initial ideas. Initially I considered using a palette consisting of shades of green, white, purple and black.
 
-**insert pinterest img link**
+**![](https://github.com/lyssfitz/Portfolio/blob/master/docs/moodboard.png**)
 
 * After some initial work on my site, I decided that a palette focused on the green, white and black shades would be cleaner and more professional-looking. I used the following palette generated on paletton.com as my basis.
 
-https://github.com/lyssfitz/Portfolio/blob/master/docs/color-palette.png*
-
-```
-[[https://github.com/lyssfitz/Portfolio/blob/master/docs/color-palette.png]]
-```
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/color-palette.png)
 
 Wireframes
 
 * I created the following wireframes using balsamiq for my website, showing mobile and desktop layouts.
+
 * During the process of creating the website, I made quite a few changes to better suit the content of the page. 
 
-**insert wireframe screenshots**
+  
+
+  ![](https://github.com/lyssfitz/Portfolio/blob/master/docs/wireframe-mobile.png)
+
+**![](https://github.com/lyssfitz/Portfolio/blob/master/docs/wireframe-desktop-1.png**)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/wireframe-desktop-2.png)
 
 Usability considerations
 
@@ -99,7 +110,11 @@ Project Plan & Timeline
 
 Screenshots of Trello board
 
-**insert trello screenshots**
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/trello-1.png)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/trello-2.png)
+
+![](https://github.com/lyssfitz/Portfolio/blob/master/docs/trello-3.png)
 
 SHORT ANSWER Q&A
 
