@@ -65,9 +65,11 @@ Design Process
 
 * After some initial work on my site, I decided that a palette focused on the green, white and black shades would be cleaner and more professional-looking. I used the following palette generated on paletton.com as my basis.
 
-**insert paletton screenshot**
+https://github.com/lyssfitz/Portfolio/blob/master/docs/color-palette.png*
 
-
+```
+[[https://github.com/lyssfitz/Portfolio/blob/master/docs/color-palette.png]]
+```
 
 Wireframes
 
@@ -134,10 +136,6 @@ Mobile internet use exceeded desktop use in the United States in 2014. Explosive
 People’s interactions with each other have been profoundly influenced by mobile social media apps which allow people to converse with others from all over the world much more quickly and easily than at any time in history. Further, many employers are now using mobile apps for various work-related reasons, with apps centered around productivity, operations, management and some even using mobile apps to track employee health.
 
 
-
-
-
-![](https://github.com/wlei6277/terminal_app/blob/master/docs/Screenshot%201.PNG "")
 
 
 
