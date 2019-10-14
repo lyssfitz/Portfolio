@@ -1,70 +1,70 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Sacramento");
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Sacramento');
 
 /* ================================= 
   Base Element Styles
 ==================================== */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 :root {
-  --primary-light-color: #f2fefc;
-  --primary-normal-color: #00f6bf;
-  --primary-dark-color: #00775c;
-  --secondary-color: #555151;
-  --text-dark-color: #555151;
-  --text-light-color: #ffffff;
-  --text-shadow-color: #0a0a0a;
+	--primary-light-color: #f2fefc;
+	--primary-normal-color: #00f6bf;
+	--primary-dark-color: #00775c;
+	--secondary-color: #555151;
+	--text-dark-color: #555151;
+	--text-light-color: #ffffff;
+	--text-shadow-color: #0a0a0a;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  line-height: 1.6;
-  color: var(--text-dark-color);
-  margin: 0;
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.6;
+	color: var(--text-dark-color);
+	margin: 0;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 p {
-  font-size: 0.95em;
-  margin-bottom: 1.8em;
+	font-size: 0.95em;
+	margin-bottom: 1.8em;
 }
 
 h2,
 h3,
 nav a,
 .name {
-  color: var(--primary-normal-color);
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
+	color: var(--primary-normal-color);
+	text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 .section-heading {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-normal-color);
+	text-decoration: none;
+	color: var(--primary-normal-color);
 }
 
 .name a:visited,
 .name a {
-  color: var(--primary-normal-color);
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
+	color: var(--primary-normal-color);
+	text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 h2,
 h3 {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 h2 {
@@ -72,13 +72,13 @@ h2 {
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .line-image-text {
-  display: inline-block;
-  vertical-align: top;
-  padding: 15px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 15px;
 }
 
 /* =================================
@@ -88,222 +88,204 @@ img {
 /* ---- Navigation ---- */
 
 .main-header {
-  background: var(--secondary-color);
-  position: sticky;
-  top: 0;
+	background: var(--secondary-color);
+	position: sticky;
+	top: 0;
 }
 
 .name {
-  font-size: 1.35em;
-  padding: 10px 10px;
-  margin: 0;
-  font-family: "Sacramento", cursive;
-  color: var(--primary-normal-color);
+	font-size: 1.35em;
+	padding: 10px 10px;
+	margin: 0;
+	font-family: 'Sacramento', cursive;
+	color: var(--primary-normal-color);
 }
 
 .main-nav {
-  margin: 0;
-  display: none;
+	margin: 0;
+	display: none;
 }
 
 .responsive {
-  display: block;
+	display: block;
 }
 
 #hamburger {
-  position: absolute;
-  right: 0;
-  top: 5px;
-  padding: 10px;
-  cursor: grabbing;
+	position: absolute;
+	right: 0;
+	top: 5px;
+	padding: 10px;
+	cursor: grabbing;
 }
 
 .name a,
 .main-nav a {
-  text-align: center;
-  display: block;
-  padding: 10px 15px;
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
 }
 
 .main-nav a {
-  font-size: 0.95em;
-  color: var(--primary-normal-color);
-  background: var(--secondary-color);
-  text-transform: uppercase;
+	font-size: 0.95em;
+	color: var(--primary-normal-color);
+	background: var(--secondary-color);
+	text-transform: uppercase;
 }
 
 .main-nav a:hover {
-  color: var(--text-light-color);
+	color: var(--text-light-color);
 }
 
 /* ---- Layout Containers ---- */
 
 .banner {
-  background: url("../img/using_laptop.jpg") 30% no-repeat;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	background: url('../img/using_laptop.jpg') 30% no-repeat;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .banner .banner-text {
-  font-family: "Sacramento", cursive;
-  font-size: 4vw;
-  color: var(--primary-normal-color);
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
+	font-family: 'Sacramento', cursive;
+	font-size: 4vw;
+	color: var(--primary-normal-color);
+	text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 .section {
-  padding: 20px;
+	padding: 20px;
 }
 
 .odd {
-  background: var(--primary-light-color);
+	background: var(--primary-light-color);
 }
 
 .project-img {
-  margin: 0;
-  display: block;
-}
-
-.first-project {
-  margin-bottom: 20px;
-}
-
-.first-project .project-img {
-  border: solid 1px var(--secondary-color);
+	margin: 0;
+	border: solid 1px var(--secondary-color);
+	display: block;
 }
 
 .contact {
-  background-color: var(--secondary-color);
-
+	background-color: var(--secondary-color);
 }
 
 .contact-links {
-  text-align: left;
+	text-align: left;
 }
 .contact-links a {
-  display: block;
-  color: var(--primary-normal-color);
+	display: block;
+	color: var(--primary-normal-color);
 }
 
 .contact-links i {
-  color: var(--primary-normal-color);
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
+	color: var(--primary-normal-color);
+	text-shadow: 1px 1px 2px var(--text-shadow-color);
 }
 
 /* ---- Page Elements ---- */
 
 .work-history-list {
-  text-align: center;
-  vertical-align: center;
-  justify-content: center;
+	text-align: center;
+	vertical-align: center;
+	justify-content: center;
 }
 
 .button-link {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  background: linear-gradient(
-          to bottom,
-          var(--primary-normal-color),
-          var(--primary-dark-color)
-  );
-  border-radius: 15px;
-  color: var(--text-light-color);
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 10px;
-  box-shadow: 1px 1px 2px var(--text-shadow-color);
-  text-shadow: 1px 1px 2px var(--text-shadow-color);
-  border: solid var(--primary-dark-color) 1px;
-  text-decoration: none;
-  cursor: pointer;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	background: linear-gradient(to bottom, var(--primary-normal-color), var(--primary-dark-color));
+	border-radius: 15px;
+	color: var(--text-light-color);
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 10px;
+	box-shadow: 1px 1px 2px var(--text-shadow-color);
+	text-shadow: 1px 1px 2px var(--text-shadow-color);
+	border: solid var(--primary-dark-color) 1px;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .button-link:hover {
-  background: linear-gradient(
-          to bottom,
-          var(--primary-dark-color),
-          var(--primary-normal-color)
-  );
-  text-decoration: none;
+	background: linear-gradient(to bottom, var(--primary-dark-color), var(--primary-normal-color));
+	text-decoration: none;
 }
 /* =================================
   Media Queries
 ==================================== */
 
 @media (min-width: 768px) {
-  .banner {
-    height: 100vh;
-  }
+	.banner {
+		height: 100vh;
+	}
 
-  .main-header,
-  .main-nav,
-  .first-project,
-  .second-project {
-    display: flex;
-  }
+	.main-header,
+	.main-nav,
+	.first-project,
+	.second-project {
+		display: flex;
+	}
 
-  .main-header {
-    flex-direction: column;
-    align-items: center;
-  }
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
 
-  #hamburger {
-    display: none;
-  }
+	#hamburger {
+		display: none;
+	}
 
-  main .section {
-    flex: 1; /* makes columns grow equally */
-    flex-basis: 50%; /* makes each columns take up 50% of the viewport */
-    padding: 20px 20%;
-  }
+	main .section {
+		flex: 1;
+		flex-basis: 50%;
+		padding: 20px 20%;
+	}
 
-  .container {
-    flex-wrap: wrap;
-  }
+	.container {
+		flex-wrap: wrap;
+	}
 
-  .project-list {
-    padding: 0 50px;
-  }
+	.project-list {
+		padding: 0 50px;
+	}
 
-  .first-project,
-  .second-project {
-    padding: 0 20px;
-    justify-content: center;
-    align-items: center;
-  }
+	.first-project,
+	.second-project {
+		padding: 0 20px;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .project-text {
-    padding: 0 30px;
-    text-align: center;
-  }
+	.project-text {
+		padding: 0 30px;
+		text-align: justify;
+	}
 
-  .second-project .project-text {
-    order: -1;
-  }
+	.second-project .project-text {
+		order: -1;
+	}
 
-  .work-history-list {
-    display: flex;
-    justify-content: space-around;
-  }
+	.work-history-list {
+		display: flex;
+		justify-content: space-around;
+	}
 
-  .contact-links {
-   /* display: flex;
-    justify-content: space-around;*/
-    text-align: left;
-  }
+	.contact-links {
+		text-align: left;
+	}
 }
 
 @media (min-width: 1025px) {
-  .main-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
