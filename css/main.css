@@ -39,10 +39,6 @@ p {
 	margin-bottom: 1.8em;
 }
 
-h2 {
-	padding-top: 72px;
-}
-
 h2,
 h3,
 nav a,
@@ -53,6 +49,7 @@ nav a,
 
 .section-heading {
 	text-transform: uppercase;
+	padding-top: 72px;
 }
 
 a {
